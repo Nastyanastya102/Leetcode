@@ -9,8 +9,7 @@ let hashTable = ["", "", "abc", "def", "ghi", "jkl",
 
 var printDigits = (digits, curr, output, n, aux) => {
     if (n === curr) {
-        // aux.push(output.join(""));
-        console.log(output.join(""));
+        aux.push(output.join(""));
         return;
     }
 
@@ -30,4 +29,4 @@ var letterCombinations = function (digits) {
     return aux;
 };
 
-letterCombinations("23"); // ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+letterCombinations("234"); // ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
